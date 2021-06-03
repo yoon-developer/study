@@ -1,6 +1,7 @@
 # Junit
 
-# Anotation
+## ----- Service Test -----
+### Anotation
 - org.springframework.boot.test.context
 ```text
 @SpringBootTest: 스프링 부트 통합 테스트를 제공
@@ -41,7 +42,7 @@
 @BeforeEach: 각 테스트 메서드 전에 실행
 ```
 
-# Test API
+## Test API
 - org.junit.jupiter.api.Assertions
 ```text
 assertAll: 여러 검증을 하나로 묶어서 테스트 할 경우 사용
@@ -72,3 +73,5 @@ assertTimeout: 특정 시간안에 실행하는지 확인
 
 fail: junit error 발생시킬때 사용
 ```
+
+## ----- Controller Test -----
