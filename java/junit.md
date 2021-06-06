@@ -81,18 +81,9 @@ fail: junit error 발생시킬때 사용
 ```text
 perform(): 요청을 전송하는 역할
 
-get(), post(), put(), delete(): HTTP 메소드
-
 params(info): 키-값 파라미터 전달
 
 andExpect(): 응답을 검증
-
-status(): 상태코드
-  - isOk() : 200
-  - isNotFound() : 404
-  - isMethodNotAllowed() : 405
-  - isInternalServerError() : 500
-  - is(int status) : status 상태 코드
 
 view(): 뷰 이름을 검증
 
@@ -101,6 +92,25 @@ redirect(): 리다이렉트 응답을 검증
 model(): 컨트롤러에서 저장한 모델 정보 검증
 
 content(): 응답에 대한 정보를 검증
+```
 
-andDo(print()): 요청 및 응답 전체 메세지를 확인
+- org.springframework.test.web.servlet.result.MockMvcResultHandlers
+```text
+status(): 상태코드
+  - isOk() : 200
+  - isNotFound() : 404
+  - isMethodNotAllowed() : 405
+  - isInternalServerError() : 500
+  - is(int status) : status 상태 코드
+  
+print(): 요청 및 응답 전체 메세지를 출력
+```
+
+- org.springframework.test.web.servlet.request.MockMvcRequestBuilders
+```text
+HTTP 메소드
+  - get()
+  - post()
+  - put()
+  - delete()
 ```
